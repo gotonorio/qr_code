@@ -21,7 +21,7 @@ def make_qrcode(qr_string, file_name):
         print('{}が間違っています'.format(file_name))
         file_name = current_dir + path_sep + DEFAULT_FILE_NAME
         img.save(file_name)
-    img_address = "{0}".format(file_name)
+    img_address = "{}".format(file_name)
     return img_address
 
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
     print("QRコードに変換したい文字列を入力してください: ", end="")
     qr_string = input()
     file_address = make_qrcode(qr_string, file_name)
-    print("「{0}」にQRコード画像を保存しました".format(file_address))
+    print("「{}」にQRコード画像を保存しました".format(file_address))
